@@ -6,7 +6,7 @@
   --secondary-color:#ffffff
 
 
-    --container-width:1300px
+   --container-width:1300px
   }
 
 
@@ -445,29 +445,9 @@ button {
   font-family: Raleway;
 }
 @media (max-width: 768px) {
-  .nav-lists {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: #ffffff;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 1rem;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
-    transform: translateY(-200%);
-    transition: all 0.4s ease;
-    opacity: 0;
-    z-index: 999;
-  }
-
-
-
-
-
-  
-
+  .card-container{
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 
 

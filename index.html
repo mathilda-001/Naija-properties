@@ -1,310 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Real Estate Website: This is a real estate platform where users can browse, search, and 
-filter properties. The site will showcase property listings with detailed information,contact 
-details. "
-    />
-    <meta name="keywords" content="Real estate and listings properties" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/homepage.css" />
 
-    <title>Naija properties</title>
-  </head>
-  <body>
-    <main>
-      <!-- nav -->
-      <header class="">
-        <div class="container header-contents">
-          <div class="logo-container">
-            <h3 class="logo">NaijaProperties</h3>
-          </div>
-          <nav>
-            <ul class="nav-lists">
-              <li class="nav-list">
-                <a href="./villas.html">Villas</a>
-              </li>
-              <li>
-                <a href="./aboutus.html">About Us</a>
-              </li>
-              <li>
-                <a href="contactus.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Real Estate Website: This is a real estate platform where users can browse, search, and 
+filter properties. The site will showcase property listings with detailed information,contact 
+details. " />
+  <meta name="keywords" content="Real estate and listings properties" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/homepage.css" />
+
+  <title>Naija properties</title>
+</head>
+
+<body>
+  <main>
+    <!-- nav -->
+    <header class="">
+      <div class="container header-contents">
+        <div class="logo-container">
+          <h3 class="logo">NaijaProperties</h3>
         </div>
+        <nav class="header-nav">
+          <ul class="nav-lists">
+            <li class="nav-list">
+              <a href="./villas.html">Villas</a>
+            </li>
+            <li>
+              <a href="./aboutus.html">About Us</a>
+            </li>
+            <li>
+              <a href="contactus.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
         <div class="menu-bar">
           <i class="fa-solid fa-bars"></i>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <section class="hero-section">
-        <div class="title">
-          <h2 class="title">Be our Guest</h2>
-          <p class="text-para">LIVE like a king in our best houses</p>
+    <section class="hero-section">
+      <div class="title">
+        <h2 class="title">Be our Guest</h2>
+        <p class="text-para">LIVE like a king in our best houses</p>
+      </div>
+      <div class="filter">
+        <form class="search">
+          <!-- location -->
+          <select class="location">
+            <option value="">Italy</option>
+            <option value="">Greece</option>
+            <option value="">Greece</option>
+            <option value="">Greece</option>
+          </select>
+          <!-- location -->
+
+          <!-- date -->
+          <select class="date">
+            <option value="date">Date</option>
+          </select>
+          <!-- date -->
+
+          <!-- guests -->
+          <select class="guests">
+            <option value="guest">Guest</option>
+          </select>
+          <!-- GUEST -->
+
+          <!-- price -->
+          <select class="price">
+            <option value="price">Price</option>
+          </select>
+
+          <div>
+            <button class="search-btn">
+              <span>Search</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="container top-pick">
+      <div class="container-pick">
+        <h2 class="top-pick-title">Top pick villas</h2>
+        <p class="top-pick-paragraph">
+          Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies.
+          <br />
+          Morbi nec tempus dui, sit amet facilisis nisl. Ut vel urna quis urna
+          tristiqueb <br />
+          tempus. Etiam lobortis est at mauris eleifend, id tempor purus
+          <br />
+          ultricies.
+        </p>
+      </div>
+      <div class="card-container" id="card-container"></div>
+    </section>
+
+    <section class="regions">
+      <h2>OUR REGIONS</h2>
+      <p>
+        Fusce blandit magna eget nibh tincidunt, ac lacinia quam faucibus.
+        Quisque feugiat felis a quam volutpat, non scelerisque nibh malesuada.
+      </p>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card" style="background-image: url('./Assets/moutain-image.png')">
+          <div class="card-content">
+            <h3>Mountains</h3>
+            <p>87 properties</p>
+          </div>
         </div>
-        <div class="filter">
-          <form class="search">
-            <!-- location -->
-            <select class="location">
-              <option value="">Italy</option>
-              <option value="">Greece</option>
-              <option value="">Greece</option>
-              <option value="">Greece</option>
-            </select>
-            <!-- location -->
 
-            <!-- date -->
-            <select class="date">
-              <option value="date">Date</option>
-            </select>
-            <!-- date -->
-
-            <!-- guests -->
-            <select class="guests">
-              <option value="guest">Guest</option>
-            </select>
-            <!-- GUEST -->
-
-            <!-- price -->
-            <select class="price">
-              <option value="price">Price</option>
-            </select>
-
-            <div>
-              <button class="search-btn">
-                <span>Search</span>
-              </button>
-            </div>
-          </form>
+        <!-- Card 2 -->
+        <div class="card" style="background-image: url('./Assets/coastline-image.png')">
+          <div class="card-content">
+            <h3>Coastline</h3>
+            <p>64 properties</p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="container top-pick">
-        <div class="container-pick">
-          <h2 class="top-pick-title">Top pick villas</h2>
-          <p class="top-pick-paragraph">
-            Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies.
-            <br />
-            Morbi nec tempus dui, sit amet facilisis nisl. Ut vel urna quis urna
-            tristiqueb <br />
-            tempus. Etiam lobortis est at mauris eleifend, id tempor purus
-            <br />
-            ultricies.
+    <section class="specialities">
+      <h2>Our properties specialities</h2>
+      <div class="features">
+        <div class="feature">
+          <span class="icon">🌊</span>
+          <h3>Seafront</h3>
+          <p>have a look →</p>
+        </div>
+        <div class="feature">
+          <span class="icon">🐾</span>
+          <h3>Pet friendly</h3>
+          <p>pets allowed →</p>
+        </div>
+        <div class="feature">
+          <span class="icon">🔌</span>
+          <h3>Electric car</h3>
+          <p>charge your car →</p>
+        </div>
+        <div class="feature">
+          <span class="icon">🏋️</span>
+          <h3>Fitness/Gym</h3>
+          <p>work out →</p>
+        </div>
+        <div class="feature">
+          <span class="icon">⛵</span>
+          <h3>Boat mooring</h3>
+          <p>take a trip →</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-overlay">
+        <div class="cta-card">
+          <p class="small-text">BECOME A HOST</p>
+          <h2>Become a host</h2>
+          <p class="desc">
+            Join the elite league of hosts specializing in luxury villas and
+            unlock a world of exclusive opportunities.
+          </p>
+          <button class="cta-btn">JOIN TODAY</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container about">
+      <div class="aboutus-information">
+        <div class="about-left">
+          <h2 class="aboutus-title">About us</h2>
+          <p class="about-para">
+            Curabitur efficitur ante vel mi bibendum, et maximus nisl
+            ultricies. Morbi nec tempus dui, sit amet facilisis nisl.
+          </p>
+          <p class="about-para">
+            Ut vel urna quis urna tristique tempus. Etiam lobortis est at
+            mauris eleifend, id tempor purus ultricies.
+          </p>
+          <p class="about-para">
+            Curabitur efficitur luctus enim nec sollicitudin. Fusce venenatis
+            venenatis lorem eu accumsan. Nunc sit amet mi vitae odio porttitor
+            feugiat. Sed quis sem elementum, viverra ligula at, lobortis
+            magna. Praesent congue nibh in dolor rutrum, et euismod quam
+            elementum.
+          </p>
+          <p class="about-para">
+            Mauris justo felis, iaculis quis sagittis sit amet, feugiat vitae
+            est. Aliquam porta ex elit, sit amet rutrum turpis egestas
+            viverra. Quisque at libero purus
+          </p>
+          <p class="about-us-left-para">
+            We strive to offer you best possible homes to stay.
           </p>
         </div>
-        <div class="card-container" id="card-container"></div>
-      </section>
 
-      <section class="regions">
-        <h2>OUR REGIONS</h2>
-        <p>
-          Fusce blandit magna eget nibh tincidunt, ac lacinia quam faucibus.
-          Quisque feugiat felis a quam volutpat, non scelerisque nibh malesuada.
-        </p>
+        <img src="./Assets/property-8.png" alt="image" class="aboutus-card-image" />
+      </div>
+    </section>
 
-        <div class="cards">
-          <!-- Card 1 -->
-          <div
-            class="card"
-            style="background-image: url('./Assets/moutain-image.png')"
-          >
-            <div class="card-content">
-              <h3>Mountains</h3>
-              <p>87 properties</p>
+ <section>
+  <div class="footer-bg">
+    <div class="container footer-contact">
+      <div class="footer-contact-left">
+        <div class="footer-contact-left-top">
+          <h2>Let's connect</h2>
+          <div class="contact-info">
+            <div>
+              <h3>Phone:</h3>
+              <p>+234 9137139186</p>
             </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="card"
-            style="background-image: url('./Assets/coastline-image.png')"
-          >
-            <div class="card-content">
-              <h3>Coastline</h3>
-              <p>64 properties</p>
+            <div>
+              <h3>Email:</h3>
+              <p>olamilekanabdlazeez905@gmail.com</p>
+            </div>
+            <div class="contact-info-address">
+              <h3>Address:</h3>
+              <p>Prospekt Ltd Drazice 138, 51 000 Rijeka Croatia</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="specialities">
-        <h2>Our properties specialities</h2>
-        <div class="features">
-          <div class="feature">
-            <span class="icon">🌊</span>
-            <h3>Seafront</h3>
-            <p>have a look →</p>
+        <div class="footer-contact-left-bottom"></div>
+      </div>
+      <div class="footer-contact-right">
+        <h2>We’d love to hear from you</h2>
+        <form class="footer-contact-form">
+          <div class="name-email">
+            <input type="text" placeholder="Your Name" />
+            <input type="text" placeholder="Email" />
           </div>
-          <div class="feature">
-            <span class="icon">🐾</span>
-            <h3>Pet friendly</h3>
-            <p>pets allowed →</p>
+          <textarea placeholder="Message"></textarea>
+          <div>
+            <button class="footer-contact-form-btn">Submit</button>
           </div>
-          <div class="feature">
-            <span class="icon">🔌</span>
-            <h3>Electric car</h3>
-            <p>charge your car →</p>
-          </div>
-          <div class="feature">
-            <span class="icon">🏋️</span>
-            <h3>Fitness/Gym</h3>
-            <p>work out →</p>
-          </div>
-          <div class="feature">
-            <span class="icon">⛵</span>
-            <h3>Boat mooring</h3>
-            <p>take a trip →</p>
-          </div>
-        </div>
-      </section>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="contact-container"></div>
+  <footer>
+    <div class="container footer-contents">
+      <h2>Footer</h2>
+      <h6></h6>
+    </div>
+  </footer>
+</section>
+  </main>
+  <script src="./properties.js"></script>
+  <script src="./app.js"></script>
+</body>
 
-      <section class="cta-section">
-        <div class="cta-overlay">
-          <div class="cta-card">
-            <p class="small-text">BECOME A HOST</p>
-            <h2>Become a host</h2>
-            <p class="desc">
-              Join the elite league of hosts specializing in luxury villas and
-              unlock a world of exclusive opportunities.
-            </p>
-            <button class="cta-btn">JOIN TODAY</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="container about">
-        <div class="aboutus-information">
-          <div class="about-left">
-            <h2 class="aboutus-title">About us</h2>
-            <p class="about-para">
-              Curabitur efficitur ante vel mi bibendum, et maximus nisl
-              ultricies. Morbi nec tempus dui, sit amet facilisis nisl.
-            </p>
-            <p class="about-para">
-              Ut vel urna quis urna tristique tempus. Etiam lobortis est at
-              mauris eleifend, id tempor purus ultricies.
-            </p>
-            <p class="about-para">
-              Curabitur efficitur luctus enim nec sollicitudin. Fusce venenatis
-              venenatis lorem eu accumsan. Nunc sit amet mi vitae odio porttitor
-              feugiat. Sed quis sem elementum, viverra ligula at, lobortis
-              magna. Praesent congue nibh in dolor rutrum, et euismod quam
-              elementum.
-            </p>
-            <p class="about-para">
-              Mauris justo felis, iaculis quis sagittis sit amet, feugiat vitae
-              est. Aliquam porta ex elit, sit amet rutrum turpis egestas
-              viverra. Quisque at libero purus
-            </p>
-            <p class="about-us-left-para">
-              We strive to offer you best possible homes to stay.
-            </p>
-          </div>
-
-          <img
-            src="./Assets/property-8.png"
-            alt="image"
-            class="aboutus-card-image"
-          />
-        </div>
-      </section>
-
-      <section class="footer">
-        <div class="contact-container">
-          <div class="contacts-left-info">
-            <h2>Let’s connect</h2>
-            <p><strong>Phone:</strong>+385 99 3122 8444</p>
-            <p><strong>Email:</strong>prospekt@prospekt.hr</p>
-            <p>
-              <strong>Address:</strong><br />
-              Prospekt Ltd <br />
-              Cracare 138, 51000 Rijeka, Croatia
-            </p>
-
-            <div class="icons">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-whatsapp"></i>
-            </div>
-          </div>
-
-          <div class="contacts-right-form">
-            <h2>We’d love to hear from you</h2>
-            <form>
-              <div class="input-row">
-                <input type="text" placeholder="Your Name" />
-                <input type="text" placeholder="Email" />
-              </div>
-              <textarea placeholder="message"></textarea>
-              <label>
-                <input type="checkbox" />I accept the Terms and conditions
-              </label>
-
-              <button type="submit">SEND</button>
-            </form>
-          </div>
-        </div>
-        <!-- contact -->
-
-        <!-- background -->
-        <section class="footer-bg-img-container"></section>
-
-        <!-- footer -->
-        <footer class=" footer-container">
-          <div class="container footer-contents">
-            <div class="footer-left">
-              <h3>Naija Properties</h3>
-              <p>
-                We ara a lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut
-              </p>
-
-              <div class="footer-links">
-                <a href="./tems.html">Terms & Conditions</a>
-                <a href="#">Privacy Notice and Cookies</a>
-                <a href="#">Imprint</a>
-              </div>
-            </div>
-
-            <!-- Right Side -->
-            <div class="footer-right">
-              <h4>Connect with us</h4>
-              <p>+00 000 000 000</p>
-              <p>
-                <a href="mailto:info@luxuryrentals.com"
-                  >info@luxuryrentals.com</a
-                >
-              </p>
-              <div class="footer-icon">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-              <small>Luxury rentals | © All rights reserved 2023–2025</small>
-            </div>
-          </div>
-        </footer>
-      </section>
-    </main>
-    <script src="./properties.js"></script>
-    <script src="./app.js"></script>
-  </body>
 </html>
